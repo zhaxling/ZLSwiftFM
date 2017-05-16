@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 // 当前系统版本
 let kVersion = (UIDevice.current.systemVersion as NSString).floatValue

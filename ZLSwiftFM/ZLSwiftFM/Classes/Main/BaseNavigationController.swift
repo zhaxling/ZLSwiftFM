@@ -14,7 +14,8 @@ class BaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         
-        navigationBar.tintColor = UIColor.orange
+//        navigationBar.tintColor = UIColor.orange
+        navigationBar.backgroundColor = UIColor.white
         
         let attributes = [
             NSForegroundColorAttributeName : UIColor.hexInt(0x333333),

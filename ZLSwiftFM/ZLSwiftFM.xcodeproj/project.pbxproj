@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D5D6CA96C167E2A94006EBAB /* Pods_ZLSwiftFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73F9312933D87DA418B23C /* Pods_ZLSwiftFM.framework */; };
+		D7060A9A1ECAEF480033B661 /* Xcode in Resources */ = {isa = PBXBuildFile; fileRef = D7060A991ECAEF480033B661 /* Xcode */; };
+		D7060A9C1ECAF5A50033B661 /* ZLTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */; };
 		D79174B21EC97FB400B090E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79174B11EC97FB400B090E7 /* MainViewController.swift */; };
 		D79174B51EC97FBE00B090E7 /* Mac in Resources */ = {isa = PBXBuildFile; fileRef = D79174B31EC97FBE00B090E7 /* Mac */; };
 		D79174B81EC980F800B090E7 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79174B71EC980F800B090E7 /* BaseTabBarController.swift */; };
@@ -48,6 +50,8 @@
 		350F41B8674D17614E90FCE6 /* Pods-ZLSwiftFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLSwiftFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZLSwiftFM/Pods-ZLSwiftFM.release.xcconfig"; sourceTree = "<group>"; };
 		483452F0D204C25980BAC4BE /* Pods-ZLSwiftFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLSwiftFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZLSwiftFM/Pods-ZLSwiftFM.debug.xcconfig"; sourceTree = "<group>"; };
 		CB73F9312933D87DA418B23C /* Pods_ZLSwiftFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLSwiftFM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7060A991ECAEF480033B661 /* Xcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Xcode; sourceTree = "<group>"; };
+		D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLTitleTextField.swift; sourceTree = "<group>"; };
 		D79174B11EC97FB400B090E7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D79174B31EC97FBE00B090E7 /* Mac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mac; sourceTree = "<group>"; };
 		D79174B71EC980F800B090E7 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 		D79174AB1EC97F1700B090E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				D79174B31EC97FBE00B090E7 /* Mac */,
+				D7060A991ECAEF480033B661 /* Xcode */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -505,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7060A9A1ECAEF480033B661 /* Xcode in Resources */,
 				D79174B51EC97FBE00B090E7 /* Mac in Resources */,
 				D7D07BF91EC95CB1000A6579 /* Assets.xcassets in Resources */,
 				D7D07BF71EC95CB1000A6579 /* Main.storyboard in Resources */,
@@ -589,6 +596,7 @@
 				D79174D41EC9852F00B090E7 /* FindViewController.swift in Sources */,
 				D79174D61EC9853A00B090E7 /* MyViewController.swift in Sources */,
 				D79174DC1EC9B55B00B090E7 /* BaseNavigationController.swift in Sources */,
+				D7060A9C1ECAF5A50033B661 /* ZLTitleTextField.swift in Sources */,
 				D79174B81EC980F800B090E7 /* BaseTabBarController.swift in Sources */,
 				D79174D81EC98AD000B090E7 /* Const.swift in Sources */,
 				D79174DA1EC990AD00B090E7 /* ZLTabBar.swift in Sources */,

@@ -34,6 +34,14 @@ class ZLTabBar: UIImageView {
                 "tabbar_icon_find_",
                 "tabbar_icon_my_"]
     }()
+    
+    lazy var displayLink:CADisplayLink = {
+        let displayLink = CADisplayLink(target: self, selector: #selector(displayLinkEvent))
+        displayLink.isPaused = true
+        displayLink.add(to: RunLoop.current, forMode: .commonModes)
+        return displayLink
+    }()
+    
 
     override init(frame: CGRect) {
         // 设置frame
@@ -49,14 +57,21 @@ class ZLTabBar: UIImageView {
         for index in 0..<5 {
             
             let btnW:CGFloat = tabbarFrame.width / 5
-            let btn = UIButton(type: .custom)
-            btn.tag = kTagPlus + index
-            addSubview(btn)
-            btn.setImage(UIImage(named:imagePrefixArray[index] + "normal"), for: .normal)
-            btn.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
+            
             if index == 2 {
-                btn.frame = CGRect(x: kScreenWidth * 0.5 - kTabBarH * 0.5, y: -10, width: kTabBarH + 10, height: kTabBarH + 10)
+                let btn = PlayButton(frame: CGRect(x: kScreenWidth * 0.5 - kTabBarH * 0.5, y: -10, width: kTabBarH + 10, height: kTabBarH + 10))
+                btn.tag = kTagPlus + index
+                addSubview(btn)
+                btn.setImage(UIImage(named:imagePrefixArray[index] + "normal"), for: .normal)
+                btn.setImage(UIImage(named:imagePrefixArray[index] + "normal"), for: .highlighted)
+                btn.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
+                
             }else{
+                let btn = UIButton(type: .custom)
+                btn.tag = kTagPlus + index
+                addSubview(btn)
+                btn.setImage(UIImage(named:imagePrefixArray[index] + "normal"), for: .normal)
+                btn.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
                 btn.frame = CGRect(x: btnW * CGFloat(index), y: 0, width: btnW, height: kTabBarH)
                 btn.setImage(UIImage(named:imagePrefixArray[index] + "pressed"), for: .selected)
             }
@@ -91,7 +106,8 @@ class ZLTabBar: UIImageView {
         AppLog(btn.tag)
         
         if btn.tag == 102 {
-            
+            // 如果在播放 隐藏播放图标按钮 开启CADisplayLink事件
+            displayLink.isPaused = false
         }
         
         //切换控制器
@@ -103,16 +119,39 @@ class ZLTabBar: UIImageView {
             selectedBtn = btn
         }
     }
+    
+    func displayLinkEvent() {
+        // 转动播放按钮
+        guard let playButton:PlayButton = viewWithTag(102) as? PlayButton else {
+            AppLog("没有播放按钮")
+            return
+        }
+        
+        
+        UIView.animate(withDuration: 0.1) { 
+            playButton.button.transform = playButton.button.transform.rotated(by: CGFloat(M_PI_4  / 90))
+        }
+        
+    }
 }
 
+
 // MARK:- 中间的播放按钮
-class PlayButton: UIImageView {
+class PlayButton: UIButton {
+    
+    var isPlay:Bool = false
     
     // 播放按钮 添加点击事件
     lazy var button:UIButton = {
         let btn = UIButton(type: .custom)
-        btn .setImage(UIImage(named:"tabbar_np_playshadow"), for: .normal)
-        btn.addTarget(self, action: #selector(playButtonClick), for: .touchUpInside)
+//        btn .setImage(UIImage(named:"tabbar_np_playshadow"), for: .normal)
+        btn.setImage(UIImage(named: "rotate"), for: .normal)
+        btn.frame = CGRect(x: 5, y: 5, width: kTabBarH, height: kTabBarH)
+//        btn.addTarget(self, action: #selector(playButtonClick), for: .touchUpInside)
+        btn.layer.cornerRadius = kTabBarH * 0.5
+        btn.clipsToBounds = true
+        btn.isEnabled = false
+        btn.backgroundColor = randomColor()
         return btn
     }()
     
@@ -120,15 +159,22 @@ class PlayButton: UIImageView {
     lazy var play:UIButton = {
         
         let btn = UIButton(type: .custom)
-        btn .setImage(UIImage(named:"tabbar_np_playnon"), for: .normal)
+        btn.setImage(UIImage(named:"tabbar_np_play"), for: .normal)
+        btn.frame = self.button.frame
+        btn.isUserInteractionEnabled = true
+        btn.isEnabled = false
+//        btn.addTarget(self, action: #selector(playButtonClick), for: .touchUpInside)
+        
         return btn
     }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         addSubview(button)
         addSubview(play)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -136,6 +182,7 @@ class PlayButton: UIImageView {
     }
     
     func playButtonClick() {
-        
+        AppLog("")
+        // 交给父视图 处理触发事件
     }
 }
