@@ -16,13 +16,14 @@ class BaseNavigationController: UINavigationController {
         
 //        navigationBar.tintColor = UIColor.orange
         navigationBar.backgroundColor = UIColor.white
+        navigationBar.setBackgroundImage(UIImage(named:"navigationbar_bg_64"), for: .default)
         
         let attributes = [
             NSForegroundColorAttributeName : UIColor.hexInt(0x333333),
             NSFontAttributeName: UIFont.systemFont(ofSize: 18)
         ]
         UINavigationBar.appearance().titleTextAttributes = attributes
-        UINavigationBar.appearance().tintColor = UIColor.hexInt(0x333333)
+//        UINavigationBar.appearance().tintColor = UIColor.hexInt(0x333333)
     }
 
     override func didReceiveMemoryWarning() {

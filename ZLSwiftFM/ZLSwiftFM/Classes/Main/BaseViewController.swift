@@ -15,7 +15,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = randomColor()
+        view.backgroundColor = UIColor.colorWithHexString(hex: "f0f1f2")
         
         // 初始化导航栏
         navigationItem.leftBarButtonItem = leftBarButton

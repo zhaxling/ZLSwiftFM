@@ -1,24 +1,19 @@
 //
-//  FindViewController.swift
+//  ZLTopsViewController.swift
 //  ZLSwiftFM
 //
-//  Created by ZXL on 2017/5/15.
+//  Created by ZXL on 2017/5/18.
 //  Copyright © 2017年 zl. All rights reserved.
 //
 
 import UIKit
 
-class FindViewController: BaseViewController {
+class ZLTopsViewController: HomeBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = "发现"
-        
-        // 添加表格
-        tableView.frame = CGRect(x: 0, y: 64.0, width: kScreenWidth, height: kScreenHeight - 64 - kNavHeight)
-        view.addSubview(tableView)
-        automaticallyAdjustsScrollViewInsets = false
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

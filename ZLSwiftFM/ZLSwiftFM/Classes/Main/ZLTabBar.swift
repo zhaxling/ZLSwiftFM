@@ -129,7 +129,7 @@ class ZLTabBar: UIImageView {
         
         
         UIView.animate(withDuration: 0.1) { 
-            playButton.button.transform = playButton.button.transform.rotated(by: CGFloat(M_PI_4  / 90))
+            playButton.button.transform = playButton.button.transform.rotated(by: CGFloat(Double.pi / (4 * 90)))
         }
         
     }

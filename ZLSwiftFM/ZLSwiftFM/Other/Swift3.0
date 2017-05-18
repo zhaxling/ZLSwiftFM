@@ -1,0 +1,66 @@
+1.在swift3.0中方法的返回值必须要有接收，否则会报警或者报错,@discardableResult告诉编译器此方法可以不用接收方法的返回值
+
+2.Swift中struct与Class非常相似, 但是他们还是有点区别的
+区别一: struct没有继承功能,但是class是可以继承的
+区别二: 区别体现在内存上, struct是通过值传递的,而class是通过 引用来传递的.
+
+3.在Swift3.0中
+public表示当前类、属性或者方法只能在当前module内被继承或者override，在当前module意外只能被访问；
+open表示当前类、属性或者方法可以在任何地方被继承或者override；
+final是一个辅助修饰词，表示当前类、属性或者方法在任何地方都只能被访问，不能被继承或者override；
+internal表示默认级别。
+总结
+Swfit3.0中，访问控制权限由高到低依次为：open、public、internal（默认）、fileprivate，private。
+
+
+OC的初始化方法在Swift中被引为
+
+init(...) --- 如果初始化不会失败
+init?(...) --- 如果初始化可能失败
+init!(...) --- 否则
+oc中的property里的(getter==, setter==)将会被swift忽略
+id对应Anyobject 但是所有的Anyobject在swift中是可选值, 如果之前的值为可选值, 在被设置为Anyobject后就是多重可选值了
+oc中的属性被标记为
+
+nullable -> 在swift中相当于 ?
+nonnull -> 在swift中相当于 非可选属性
+未标记 -> 在swift中相当于 !
+oc中的轻量级泛型也是对应与swift中的泛型
+
+@property NSArray *dates
+对应于  var dates: [Date]
+swift 中的闭包默认捕获变量的方式相当于 oc中block中捕获被标记为 __block的变量方式 -> 就是说 闭包捕获到的是变量的指针
+swift中只要不是在多线程中, 建议使用[unowned self]来避免循环引用, 多线程中, 建议使用[weak self]
+== 操作符相当于oc中的isEqual: --- 即比较内容是否相等；=== 相当于oc中的指针比较
+继承自NSObject的子类如果重写了isEquals:方法, 应当提供 hash 这个属性
+不能在oc中继承swift的class
+如果在swift中遇到oc中不支持的命名 可以利用 @objc(name)为他(属性 枚举, 方法名...)名个别名
+@nonobjc 用来标记oc中不支持的
+dynamic 将属性或者方法标记为dynamic就是告诉编译器把它当作oc里的属性或方法来使用(runtime),
+当需要使用 KVO 或者 runtime的时候需要这样处理
+当使用oc的 perform(selector, with:)方法的时候会返回一个可选值(指向AnyObject的指针)；但是使用perform(:on:with:waitUntilDone:modes:) and perform(:with:afterDelay:)不会返回可选值
+使用 #keyPath() 可以转换为string, #keyPath(class.property) == "property"
+可用于KVC 例如person.value(forKey: #keyPath(Person.name)) = person.name
+但是测试了下不能修改swift中的只读属性 不知道有什么方便的用处
+NSClassFromString("MyFramework.MyClass")
+@IBDesignable 用在class(UIView的子类)声明的前面, 然后就可以在storyBoard中的inspector编辑它；@IBInspectable 用在(UIView的子类)的属性前面, 然后就可以在storyBoard中的inspector编辑它 ,就想系统提供的可以设置颜色,字体...
+swift中的属性默认是strong类型, 只有可选类型才能被标记为weak
+oc中的 copy属性 转换为swift中的@NSCopying 必须遵守NSCoding协议
+使用Core Data的时候所有的属性和方法需要标记为 @NSManaged
+文档中指出"The corresponding reference types can be accessed with their original NS class name prefix."但是beta版本中不能很好的使用NS开头的
+在oc和swift的桥接类型之间 直接使用 as 可以相互转换
+因为swift中的String和NSString使用的编码方式不一样，所以在swift中要对string使用索引的时候 不能直接使用 Int 或者NSRange
+需要使用String.Index and Range
+swift会将Double, Int, Bool, Uint, Float和NSNumber桥接, 所以可以直接将
+这些类型的值使用 as NSNumber转换为NSNumber, 但是逆向进行是得到的可选值 as?
+Foundation 和Core Foundation 之间的类型有toll-free bridge('免费桥')
+Foundation中的常量, 在swift中被换为类嵌套的枚举：NSJSONReadingOptions ----- >> JSONSerialization.ReadingOption
+swift中使用 Core Foundation
+如果使用swift处理过的函数不用我们手动管理内存分配；否则需要我们处理
+区分的方式: 当返回值是 Unmanaged的时候说明需要我们处理
+处理方法: 在使用返回的值之前调用他对应的takeUnretainedValue() 或takeRetainedValue()即可
+例如let memoryManagedResult = StringByAddingTwoStrings(str1, str2).takeUnretainedValue()
+swift中Core Foundation里的类型 Ref后缀被去掉了 例如 CFTypeRef -> CFType
+在oc的方法 使用 NS_SWIFT_NOTHROW , 将不会使用swift的异常抛出机制
+swift中直接使用 is 来实现oc中isKindOfClass: 的功能
+swift中使用kvo的条件: 1.必须继承自NSObject 2. 被观察的属性 要被标记为 dynamic
