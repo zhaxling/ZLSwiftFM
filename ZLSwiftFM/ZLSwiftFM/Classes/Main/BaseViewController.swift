@@ -25,7 +25,7 @@ class BaseViewController: UIViewController {
     
     // UITableview
     lazy var tableView:UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight)
         tableView.delegate = self
         tableView.dataSource = self
@@ -114,6 +114,10 @@ extension BaseViewController: UITableViewDelegate,UITableViewDataSource{
         cell.backgroundColor = randomColor()
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 48.0
     }
     
 }

@@ -20,6 +20,9 @@ class ZLLiveViewModel: NSObject {
     var localRadios:Array<ZLRadioLive?> = []
     // top广播
     var topRadios:Array<ZLRadioLive?> = []
+    // cell是否展开
+    var isOpen:Bool = false
+    
     
     
     // MARK:- 数据回调
@@ -28,6 +31,7 @@ class ZLLiveViewModel: NSObject {
     
 }
 
+// MARK:- 加载数据
 extension ZLLiveViewModel{
 
     func refreshDataSource() {
@@ -59,4 +63,56 @@ extension ZLLiveViewModel{
             
         }
     }
+}
+
+// MARK:- 表格处理
+extension ZLLiveViewModel{
+    
+    /// 行数
+    func numberOfRowsIn(section:NSInteger) -> NSInteger {
+        if section == 0 {
+            return 1; // 电台
+        }
+        else if section == 1{
+            return self.localRadios.count // 本地Section
+        }
+        else{
+            // 榜单
+            return topRadios.count < 3 ? 3 : topRadios.count
+        }
+    }
+    
+    /// 高度
+    func heightForRowIn(indexPath:IndexPath) -> CGFloat {
+        if indexPath.section == 0 { // 电台
+            if isOpen {
+                return 293
+            } else {
+                return 200
+            }
+        }
+        else if indexPath.section == 1{
+            return 85.0 // 本地Section
+        }
+        else{
+            // 榜单
+            return 85.0
+        }
+    }
+    
+    /// 头视图高度
+    func heightForHeaderIn(section:NSInteger) -> CGFloat {
+        if section == 0 {
+            return 0.00001
+        }
+        else{
+            return 40.0
+        }
+    }
+    
+    /// 脚视图高度
+    func heightForFooterIn(section:NSInteger) -> CGFloat {
+        return 10.0
+    }
+    
 }

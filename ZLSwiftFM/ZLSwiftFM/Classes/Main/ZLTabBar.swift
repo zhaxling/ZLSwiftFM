@@ -117,6 +117,8 @@ class ZLTabBar: UIImageView {
             selectedBtn?.isSelected = false
             btn.isSelected = true
             selectedBtn = btn
+            
+            
         }
     }
     

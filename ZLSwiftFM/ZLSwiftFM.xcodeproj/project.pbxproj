@@ -10,6 +10,14 @@
 		D5D6CA96C167E2A94006EBAB /* Pods_ZLSwiftFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73F9312933D87DA418B23C /* Pods_ZLSwiftFM.framework */; };
 		D7060A9A1ECAEF480033B661 /* Xcode in Resources */ = {isa = PBXBuildFile; fileRef = D7060A991ECAEF480033B661 /* Xcode */; };
 		D7060A9C1ECAF5A50033B661 /* ZLTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */; };
+		D712F5881ECEBF500011DCC3 /* ZLPlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712F5861ECEBF500011DCC3 /* ZLPlayListTableViewCell.swift */; };
+		D712F5891ECEBF500011DCC3 /* ZLPlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D712F5871ECEBF500011DCC3 /* ZLPlayListTableViewCell.xib */; };
+		D712F58B1ECEC41A0011DCC3 /* ZLHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712F58A1ECEC41A0011DCC3 /* ZLHomeHeaderView.swift */; };
+		D712F58D1ECEC6AA0011DCC3 /* ZLIconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712F58C1ECEC6AA0011DCC3 /* ZLIconListView.swift */; };
+		D712F58F1ECECA030011DCC3 /* ZLRadiosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712F58E1ECECA030011DCC3 /* ZLRadiosTableViewCell.swift */; };
+		D712F5921ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712F5901ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.swift */; };
+		D712F5931ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D712F5911ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.xib */; };
+		D712F5951ECEDDA00011DCC3 /* ZLBottomTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712F5941ECEDDA00011DCC3 /* ZLBottomTitleButton.swift */; };
 		D715154D1ECD447800CA6269 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715154C1ECD447800CA6269 /* UIView+Constraint.swift */; };
 		D71515511ECD451D00CA6269 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71515501ECD451D00CA6269 /* HttpManager.swift */; };
 		D71515541ECD453300CA6269 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71515531ECD453300CA6269 /* PhotoPicker.swift */; };
@@ -50,6 +58,7 @@
 		D7D07BF91EC95CB1000A6579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D07BF81EC95CB1000A6579 /* Assets.xcassets */; };
 		D7D07C071EC95CB1000A6579 /* ZLSwiftFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D07C061EC95CB1000A6579 /* ZLSwiftFMTests.swift */; };
 		D7D07C121EC95CB1000A6579 /* ZLSwiftFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D07C111EC95CB1000A6579 /* ZLSwiftFMUITests.swift */; };
+		D7DF30631ED4087100FE52EC /* ZXLAttributeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF30621ED4087100FE52EC /* ZXLAttributeLabel.swift */; };
 		D7FF95AB1ECBEC090077F023 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF95AA1ECBEC090077F023 /* UIView+Extension.swift */; };
 		D7FF95AD1ECBEC650077F023 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF95AC1ECBEC650077F023 /* String+Extension.swift */; };
 		D7FF95AF1ECBEE920077F023 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF95AE1ECBEE920077F023 /* String+Path.swift */; };
@@ -82,6 +91,14 @@
 		CB73F9312933D87DA418B23C /* Pods_ZLSwiftFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLSwiftFM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7060A991ECAEF480033B661 /* Xcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Xcode; sourceTree = "<group>"; };
 		D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLTitleTextField.swift; sourceTree = "<group>"; };
+		D712F5861ECEBF500011DCC3 /* ZLPlayListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPlayListTableViewCell.swift; sourceTree = "<group>"; };
+		D712F5871ECEBF500011DCC3 /* ZLPlayListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLPlayListTableViewCell.xib; sourceTree = "<group>"; };
+		D712F58A1ECEC41A0011DCC3 /* ZLHomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLHomeHeaderView.swift; sourceTree = "<group>"; };
+		D712F58C1ECEC6AA0011DCC3 /* ZLIconListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLIconListView.swift; sourceTree = "<group>"; };
+		D712F58E1ECECA030011DCC3 /* ZLRadiosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLRadiosTableViewCell.swift; sourceTree = "<group>"; };
+		D712F5901ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLRadioCollectionViewCell.swift; sourceTree = "<group>"; };
+		D712F5911ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLRadioCollectionViewCell.xib; sourceTree = "<group>"; };
+		D712F5941ECEDDA00011DCC3 /* ZLBottomTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLBottomTitleButton.swift; sourceTree = "<group>"; };
 		D715154C1ECD447800CA6269 /* UIView+Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
 		D71515501ECD451D00CA6269 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		D71515531ECD453300CA6269 /* PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
@@ -130,6 +147,7 @@
 		D7D07C0D1EC95CB1000A6579 /* ZLSwiftFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLSwiftFMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D07C111EC95CB1000A6579 /* ZLSwiftFMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwiftFMUITests.swift; sourceTree = "<group>"; };
 		D7D07C131EC95CB1000A6579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DF30621ED4087100FE52EC /* ZXLAttributeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXLAttributeLabel.swift; sourceTree = "<group>"; };
 		D7FF95AA1ECBEC090077F023 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D7FF95AC1ECBEC650077F023 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D7FF95AE1ECBEE920077F023 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
@@ -180,6 +198,19 @@
 				350F41B8674D17614E90FCE6 /* Pods-ZLSwiftFM.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D712F5851ECEBF220011DCC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D712F5861ECEBF500011DCC3 /* ZLPlayListTableViewCell.swift */,
+				D712F5871ECEBF500011DCC3 /* ZLPlayListTableViewCell.xib */,
+				D712F58E1ECECA030011DCC3 /* ZLRadiosTableViewCell.swift */,
+				D712F58A1ECEC41A0011DCC3 /* ZLHomeHeaderView.swift */,
+				D712F5901ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.swift */,
+				D712F5911ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		D715154E1ECD450E00CA6269 /* Global */ = {
@@ -340,8 +371,11 @@
 		D79174AB1EC97F1700B090E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D712F5851ECEBF220011DCC3 /* Cell */,
 				D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */,
 				D7FF95B41ECC24FD0077F023 /* ZLCustomNavigation.swift */,
+				D712F58C1ECEC6AA0011DCC3 /* ZLIconListView.swift */,
+				D712F5941ECEDDA00011DCC3 /* ZLBottomTitleButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +391,7 @@
 		D79174AD1EC97F1700B090E7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF30611ED4070000FE52EC /* 文本 */,
 				D71515671ECD456900CA6269 /* 地图定位 */,
 				D71515621ECD456300CA6269 /* 自定义Switch */,
 				D71515551ECD454400CA6269 /* 弹框 */,
@@ -588,6 +623,14 @@
 			path = ZLSwiftFMUITests;
 			sourceTree = "<group>";
 		};
+		D7DF30611ED4070000FE52EC /* 文本 */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF30621ED4087100FE52EC /* ZXLAttributeLabel.swift */,
+			);
+			path = "文本";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -704,8 +747,10 @@
 			files = (
 				D7FF95B71ECC27890077F023 /* Launch Screen.storyboard in Resources */,
 				D7060A9A1ECAEF480033B661 /* Xcode in Resources */,
+				D712F5931ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.xib in Resources */,
 				D79174B51EC97FBE00B090E7 /* Mac in Resources */,
 				D7D07BF91EC95CB1000A6579 /* Assets.xcassets in Resources */,
+				D712F5891ECEBF500011DCC3 /* ZLPlayListTableViewCell.xib in Resources */,
 				D7FF95B11ECBF1590077F023 /* Swift3.0 in Resources */,
 				D7D07BF71EC95CB1000A6579 /* Main.storyboard in Resources */,
 			);
@@ -784,6 +829,7 @@
 				D7D07BF21EC95CB1000A6579 /* AppDelegate.swift in Sources */,
 				D71515841ECD480200CA6269 /* ZLHotViewController.swift in Sources */,
 				D715158C1ECD834200CA6269 /* ZLLiveViewModel.swift in Sources */,
+				D7DF30631ED4087100FE52EC /* ZXLAttributeLabel.swift in Sources */,
 				D79174CE1EC984FE00B090E7 /* BaseViewController.swift in Sources */,
 				D71515641ECD456300CA6269 /* KobView.swift in Sources */,
 				D79174DF1EC9BAE900B090E7 /* UIColor+Extension.swift in Sources */,
@@ -793,6 +839,7 @@
 				D79174B21EC97FB400B090E7 /* MainViewController.swift in Sources */,
 				D71515931ECD91A900CA6269 /* ZLRadioPlayurl.swift in Sources */,
 				D79174D41EC9852F00B090E7 /* FindViewController.swift in Sources */,
+				D712F58D1ECEC6AA0011DCC3 /* ZLIconListView.swift in Sources */,
 				D79174D61EC9853A00B090E7 /* MyViewController.swift in Sources */,
 				D7FF95B31ECC00410077F023 /* UserAccount.swift in Sources */,
 				D71515821ECD479F00CA6269 /* ZLLiveViewController.swift in Sources */,
@@ -810,13 +857,18 @@
 				D7060A9C1ECAF5A50033B661 /* ZLTitleTextField.swift in Sources */,
 				D71515541ECD453300CA6269 /* PhotoPicker.swift in Sources */,
 				D71515631ECD456300CA6269 /* SwitchAnimation.swift in Sources */,
+				D712F58B1ECEC41A0011DCC3 /* ZLHomeHeaderView.swift in Sources */,
+				D712F58F1ECECA030011DCC3 /* ZLRadiosTableViewCell.swift in Sources */,
 				D715155B1ECD455900CA6269 /* GCDTimer.swift in Sources */,
+				D712F5951ECEDDA00011DCC3 /* ZLBottomTitleButton.swift in Sources */,
 				D7FF95AF1ECBEE920077F023 /* String+Path.swift in Sources */,
 				D79174B81EC980F800B090E7 /* BaseTabBarController.swift in Sources */,
+				D712F5921ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.swift in Sources */,
 				D715157A1ECD472000CA6269 /* HomeBaseViewController.swift in Sources */,
 				D71515661ECD456300CA6269 /* IBSwitch.m in Sources */,
 				D71515591ECD454F00CA6269 /* AlertView.swift in Sources */,
 				D715157B1ECD472000CA6269 /* HomeViewController.swift in Sources */,
+				D712F5881ECEBF500011DCC3 /* ZLPlayListTableViewCell.swift in Sources */,
 				D79174D81EC98AD000B090E7 /* Const.swift in Sources */,
 				D7FF95AD1ECBEC650077F023 /* String+Extension.swift in Sources */,
 				D715154D1ECD447800CA6269 /* UIView+Constraint.swift in Sources */,
