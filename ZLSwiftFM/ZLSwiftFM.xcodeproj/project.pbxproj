@@ -24,10 +24,6 @@
 		D71515581ECD454F00CA6269 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71515561ECD454F00CA6269 /* AlertManager.swift */; };
 		D71515591ECD454F00CA6269 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71515571ECD454F00CA6269 /* AlertView.swift */; };
 		D715155B1ECD455900CA6269 /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715155A1ECD455900CA6269 /* GCDTimer.swift */; };
-		D71515631ECD456300CA6269 /* SwitchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715155C1ECD456300CA6269 /* SwitchAnimation.swift */; };
-		D71515641ECD456300CA6269 /* KobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715155D1ECD456300CA6269 /* KobView.swift */; };
-		D71515651ECD456300CA6269 /* GradientSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715155E1ECD456300CA6269 /* GradientSwitch.swift */; };
-		D71515661ECD456300CA6269 /* IBSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D71515601ECD456300CA6269 /* IBSwitch.m */; };
 		D715156A1ECD456900CA6269 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71515681ECD456900CA6269 /* LocationManager.swift */; };
 		D715156B1ECD456900CA6269 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71515691ECD456900CA6269 /* MapView.swift */; };
 		D715156D1ECD457200CA6269 /* XLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715156C1ECD457200CA6269 /* XLTextView.swift */; };
@@ -59,6 +55,10 @@
 		D7D07C071EC95CB1000A6579 /* ZLSwiftFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D07C061EC95CB1000A6579 /* ZLSwiftFMTests.swift */; };
 		D7D07C121EC95CB1000A6579 /* ZLSwiftFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D07C111EC95CB1000A6579 /* ZLSwiftFMUITests.swift */; };
 		D7DF30631ED4087100FE52EC /* ZXLAttributeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF30621ED4087100FE52EC /* ZXLAttributeLabel.swift */; };
+		D7DF30751ED431F300FE52EC /* GradientSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF306F1ED431F300FE52EC /* GradientSwitch.swift */; };
+		D7DF30761ED431F300FE52EC /* IBSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF30711ED431F300FE52EC /* IBSwitch.m */; };
+		D7DF30771ED431F300FE52EC /* KobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF30721ED431F300FE52EC /* KobView.swift */; };
+		D7DF30781ED431F300FE52EC /* SwitchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF30731ED431F300FE52EC /* SwitchAnimation.swift */; };
 		D7FF95AB1ECBEC090077F023 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF95AA1ECBEC090077F023 /* UIView+Extension.swift */; };
 		D7FF95AD1ECBEC650077F023 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF95AC1ECBEC650077F023 /* String+Extension.swift */; };
 		D7FF95AF1ECBEE920077F023 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF95AE1ECBEE920077F023 /* String+Path.swift */; };
@@ -105,12 +105,6 @@
 		D71515561ECD454F00CA6269 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D71515571ECD454F00CA6269 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		D715155A1ECD455900CA6269 /* GCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
-		D715155C1ECD456300CA6269 /* SwitchAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchAnimation.swift; sourceTree = "<group>"; };
-		D715155D1ECD456300CA6269 /* KobView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobView.swift; sourceTree = "<group>"; };
-		D715155E1ECD456300CA6269 /* GradientSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSwitch.swift; sourceTree = "<group>"; };
-		D715155F1ECD456300CA6269 /* IBSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBSwitch.h; sourceTree = "<group>"; };
-		D71515601ECD456300CA6269 /* IBSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBSwitch.m; sourceTree = "<group>"; };
-		D71515611ECD456300CA6269 /* TodayNews-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodayNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		D71515681ECD456900CA6269 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D71515691ECD456900CA6269 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D715156C1ECD457200CA6269 /* XLTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLTextView.swift; sourceTree = "<group>"; };
@@ -148,6 +142,12 @@
 		D7D07C111EC95CB1000A6579 /* ZLSwiftFMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwiftFMUITests.swift; sourceTree = "<group>"; };
 		D7D07C131EC95CB1000A6579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DF30621ED4087100FE52EC /* ZXLAttributeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXLAttributeLabel.swift; sourceTree = "<group>"; };
+		D7DF306F1ED431F300FE52EC /* GradientSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSwitch.swift; sourceTree = "<group>"; };
+		D7DF30701ED431F300FE52EC /* IBSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBSwitch.h; sourceTree = "<group>"; };
+		D7DF30711ED431F300FE52EC /* IBSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBSwitch.m; sourceTree = "<group>"; };
+		D7DF30721ED431F300FE52EC /* KobView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobView.swift; sourceTree = "<group>"; };
+		D7DF30731ED431F300FE52EC /* SwitchAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchAnimation.swift; sourceTree = "<group>"; };
+		D7DF30741ED431F300FE52EC /* TodayNews-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodayNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		D7FF95AA1ECBEC090077F023 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D7FF95AC1ECBEC650077F023 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D7FF95AE1ECBEE920077F023 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
@@ -245,20 +245,6 @@
 				D71515571ECD454F00CA6269 /* AlertView.swift */,
 			);
 			path = "弹框";
-			sourceTree = "<group>";
-		};
-		D71515621ECD456300CA6269 /* 自定义Switch */ = {
-			isa = PBXGroup;
-			children = (
-				D715155C1ECD456300CA6269 /* SwitchAnimation.swift */,
-				D715155D1ECD456300CA6269 /* KobView.swift */,
-				D715155E1ECD456300CA6269 /* GradientSwitch.swift */,
-				D715155F1ECD456300CA6269 /* IBSwitch.h */,
-				D71515601ECD456300CA6269 /* IBSwitch.m */,
-				D71515611ECD456300CA6269 /* TodayNews-Bridging-Header.h */,
-			);
-			name = "自定义Switch";
-			path = "../../../../../../swift/TodayNews/TodayNews/Main(主要)/自定义Switch";
 			sourceTree = "<group>";
 		};
 		D71515671ECD456900CA6269 /* 地图定位 */ = {
@@ -391,9 +377,9 @@
 		D79174AD1EC97F1700B090E7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF306E1ED431F300FE52EC /* 自定义Switch */,
 				D7DF30611ED4070000FE52EC /* 文本 */,
 				D71515671ECD456900CA6269 /* 地图定位 */,
-				D71515621ECD456300CA6269 /* 自定义Switch */,
 				D71515551ECD454400CA6269 /* 弹框 */,
 				D71515521ECD452D00CA6269 /* 照片 */,
 				D715154F1ECD451600CA6269 /* 网络请求 */,
@@ -631,6 +617,19 @@
 			path = "文本";
 			sourceTree = "<group>";
 		};
+		D7DF306E1ED431F300FE52EC /* 自定义Switch */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF306F1ED431F300FE52EC /* GradientSwitch.swift */,
+				D7DF30701ED431F300FE52EC /* IBSwitch.h */,
+				D7DF30711ED431F300FE52EC /* IBSwitch.m */,
+				D7DF30721ED431F300FE52EC /* KobView.swift */,
+				D7DF30731ED431F300FE52EC /* SwitchAnimation.swift */,
+				D7DF30741ED431F300FE52EC /* TodayNews-Bridging-Header.h */,
+			);
+			path = "自定义Switch";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -825,13 +824,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D71515651ECD456300CA6269 /* GradientSwitch.swift in Sources */,
 				D7D07BF21EC95CB1000A6579 /* AppDelegate.swift in Sources */,
 				D71515841ECD480200CA6269 /* ZLHotViewController.swift in Sources */,
 				D715158C1ECD834200CA6269 /* ZLLiveViewModel.swift in Sources */,
 				D7DF30631ED4087100FE52EC /* ZXLAttributeLabel.swift in Sources */,
 				D79174CE1EC984FE00B090E7 /* BaseViewController.swift in Sources */,
-				D71515641ECD456300CA6269 /* KobView.swift in Sources */,
 				D79174DF1EC9BAE900B090E7 /* UIColor+Extension.swift in Sources */,
 				D715156A1ECD456900CA6269 /* LocationManager.swift in Sources */,
 				D715156B1ECD456900CA6269 /* MapView.swift in Sources */,
@@ -856,18 +853,20 @@
 				D79174DC1EC9B55B00B090E7 /* BaseNavigationController.swift in Sources */,
 				D7060A9C1ECAF5A50033B661 /* ZLTitleTextField.swift in Sources */,
 				D71515541ECD453300CA6269 /* PhotoPicker.swift in Sources */,
-				D71515631ECD456300CA6269 /* SwitchAnimation.swift in Sources */,
 				D712F58B1ECEC41A0011DCC3 /* ZLHomeHeaderView.swift in Sources */,
 				D712F58F1ECECA030011DCC3 /* ZLRadiosTableViewCell.swift in Sources */,
+				D7DF30761ED431F300FE52EC /* IBSwitch.m in Sources */,
 				D715155B1ECD455900CA6269 /* GCDTimer.swift in Sources */,
+				D7DF30751ED431F300FE52EC /* GradientSwitch.swift in Sources */,
 				D712F5951ECEDDA00011DCC3 /* ZLBottomTitleButton.swift in Sources */,
+				D7DF30771ED431F300FE52EC /* KobView.swift in Sources */,
 				D7FF95AF1ECBEE920077F023 /* String+Path.swift in Sources */,
 				D79174B81EC980F800B090E7 /* BaseTabBarController.swift in Sources */,
 				D712F5921ECECD3B0011DCC3 /* ZLRadioCollectionViewCell.swift in Sources */,
 				D715157A1ECD472000CA6269 /* HomeBaseViewController.swift in Sources */,
-				D71515661ECD456300CA6269 /* IBSwitch.m in Sources */,
 				D71515591ECD454F00CA6269 /* AlertView.swift in Sources */,
 				D715157B1ECD472000CA6269 /* HomeViewController.swift in Sources */,
+				D7DF30781ED431F300FE52EC /* SwitchAnimation.swift in Sources */,
 				D712F5881ECEBF500011DCC3 /* ZLPlayListTableViewCell.swift in Sources */,
 				D79174D81EC98AD000B090E7 /* Const.swift in Sources */,
 				D7FF95AD1ECBEC650077F023 /* String+Extension.swift in Sources */,
