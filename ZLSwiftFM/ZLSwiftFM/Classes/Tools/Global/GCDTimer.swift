@@ -71,6 +71,7 @@ class GCDTimer: NSObject {
                 }
             }
             else{
+                
                 DispatchQueue.main.async {
                     // 返回主线程处理一些事件
                     turnBack(timeCount)
