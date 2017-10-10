@@ -57,7 +57,7 @@ class PhotoPicker: NSObject {
         alertController.addAction(cancleAction)
         
         presentVC.present(alertController, animated: true) { 
-            AppLog("选择照片中")
+            customLog("选择照片中")
         }
         
         

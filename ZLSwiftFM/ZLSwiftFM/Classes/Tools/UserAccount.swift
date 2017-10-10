@@ -67,7 +67,7 @@ class UserAccount: NSObject,NSCoding {
     func storeUserAccount() -> Bool {
         
         guard id != nil else {
-            AppLog("用户信息为空")
+            customLog("用户信息为空")
             return false
         }
         

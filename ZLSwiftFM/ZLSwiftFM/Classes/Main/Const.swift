@@ -51,11 +51,10 @@ func HEIGHT(_ size:Float) -> CGFloat
 }
 
 /// 自定义Log
-func AppLog<T>(_ message: T, fileName: String = #file, methodName: String =  #function, lineNumber: Int = #line)
-{
+func ZXLLog(file: String = #file, line: Int = #line, function: String = #function, _ items: Any) {
+    
     #if DEBUG
-        let str : String = (fileName as NSString).pathComponents.last!.replacingOccurrences(of: "swift", with: "")
-        print("\(str)\(methodName)[\(lineNumber)]:\(message)")
+        print("文件: \((file as NSString).lastPathComponent), 行数: \(line), 函数: \(function): => \(items) \n")
     #endif
 }
 

@@ -111,6 +111,6 @@ extension ZLRadiosTableViewCell :UICollectionViewDelegate,UICollectionViewDataSo
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        AppLog("")
+        customLog("")
     }
 }

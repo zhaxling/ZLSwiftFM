@@ -103,7 +103,7 @@ class ZLTabBar: UIImageView {
     
     // 按钮点击
     func btnClick(_ btn:UIButton) {
-        AppLog(btn.tag)
+        customLog(btn.tag)
         
         if btn.tag == 102 {
             // 如果在播放 隐藏播放图标按钮 开启CADisplayLink事件
@@ -125,7 +125,7 @@ class ZLTabBar: UIImageView {
     func displayLinkEvent() {
         // 转动播放按钮
         guard let playButton:PlayButton = viewWithTag(102) as? PlayButton else {
-            AppLog("没有播放按钮")
+            customLog("没有播放按钮")
             return
         }
         
@@ -184,7 +184,7 @@ class PlayButton: UIButton {
     }
     
     func playButtonClick() {
-        AppLog("")
+        customLog("")
         // 交给父视图 处理触发事件
     }
 }

@@ -36,7 +36,7 @@ class BaseViewController: UIViewController {
     // MARK:- 设置导航栏按钮的图片
     func setNavigationBarItemImage(barButton:UIBarButtonItem ,_ image:UIImage?) {
         guard let barButton:UIButton = barButton.customView as? UIButton else {
-            AppLog("按钮不存在")
+            customLog("按钮不存在")
             return
         }
         barButton.setImage(image, for: .normal)
@@ -75,17 +75,17 @@ class BaseViewController: UIViewController {
 
     // 左边导航按钮点击
     func leftBarButtonClick() {
-        AppLog("")
+        customLog("")
     }
     
     // 右边第一个导航按钮点击
     func rightFirstBarButtonClick() {
-        AppLog("")
+        customLog("")
     }
     
     // 右边第二个导航按钮点击
     func rightSecondBarButtonClick() {
-        AppLog("")
+        customLog("")
     }
     
     override func didReceiveMemoryWarning() {

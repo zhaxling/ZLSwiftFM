@@ -37,7 +37,7 @@ class HomeViewController: BaseViewController {
         self.titleNavi = ZLCustomNavigation(frame: CGRect.zero,
                                            
                                             titles: titles) { [unowned self] (index) in
-                                            AppLog( "点击了标题\(index)")
+                                            customLog( "点击了标题\(index)")
                 self.isScrollViewScrollByButtonClick = true;
                 self.scrollView.setContentOffset(CGPoint(x: kScreenWidth * CGFloat(index), y: 0), animated: true)
         }
@@ -124,7 +124,7 @@ extension HomeViewController {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         /// 滚动标题
         let page = Int(scrollView.contentOffset.x / kScreenWidth + 0.5)
-        AppLog(page)
+        customLog(page)
         titleNavi?.setTitleIndex(index: page)
     }
 }

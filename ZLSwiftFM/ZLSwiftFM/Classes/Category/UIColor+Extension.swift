@@ -11,6 +11,12 @@ import UIKit
 
 extension UIColor {
     
+    // MARK: - RGB
+    class func rbg(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
+        let color = UIColor.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
+        return color
+    }
+    
     // MARK:- 十六进制
     class func hexInt(_ hexValue: Int) -> UIColor {
         return UIColor(red: ((CGFloat)((hexValue & 0xFF0000) >> 16)) / 255.0,

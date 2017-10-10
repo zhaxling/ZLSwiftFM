@@ -40,14 +40,14 @@ class LocationManager: NSObject {
     func getUserLocation(success:@escaping (_ location:CLLocation) -> ()) {
         let statu = CLLocationManager.authorizationStatus()
         if !CLLocationManager.locationServicesEnabled() {
-            AppLog("定位服务当前可能尚未打开，请设置打开！")
+            customLog("定位服务当前可能尚未打开，请设置打开！")
             return
         }
         
         if statu == CLAuthorizationStatus.notDetermined ||
             statu == CLAuthorizationStatus.restricted ||
             statu == CLAuthorizationStatus.denied{
-            AppLog("定位权限： --- \(statu)")
+            customLog("定位权限： --- \(statu)")
             self.locManager.requestWhenInUseAuthorization()
         }else{
             
@@ -60,14 +60,14 @@ class LocationManager: NSObject {
     func getUserGeoLocation(success:@escaping (_ location:CLLocation) -> () ,geoSuccess: @escaping ([CLPlacemark]) -> ()) {
         let statu = CLLocationManager.authorizationStatus()
         if !CLLocationManager.locationServicesEnabled() {
-            AppLog("定位服务当前可能尚未打开，请设置打开！")
+            customLog("定位服务当前可能尚未打开，请设置打开！")
             return
         }
         
         if statu == CLAuthorizationStatus.notDetermined ||
             statu == CLAuthorizationStatus.restricted ||
             statu == CLAuthorizationStatus.denied{
-            AppLog("定位权限： --- \(statu)")
+            customLog("定位权限： --- \(statu)")
             self.locManager.requestWhenInUseAuthorization()
         }else{
             
@@ -86,7 +86,7 @@ class LocationManager: NSObject {
 
 extension LocationManager: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        AppLog("定位成功: --- \(locations)")
+        customLog("定位成功: --- \(locations)")
         if (self.locationSuccess != nil) {
             self.locationSuccess!(locations.last!)
         }
@@ -122,6 +122,6 @@ extension LocationManager: CLLocationManagerDelegate{
         }
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        AppLog("定位失败")
+        customLog("定位失败")
     }
 }

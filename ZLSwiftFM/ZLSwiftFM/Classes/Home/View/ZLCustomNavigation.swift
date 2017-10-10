@@ -37,7 +37,7 @@ class ZLCustomNavigation: UIView {
     
     private func setupUI()  {
         
-        AppLog(NSStringFromCGRect(frame))
+        customLog(NSStringFromCGRect(frame))
         
         let btnWidth = frame.size.width / CGFloat((titles?.count)!)
         
@@ -83,7 +83,7 @@ class ZLCustomNavigation: UIView {
     }()
     
     @objc private func btnClick(_ btn:UIButton) {
-        AppLog(btn.tag)
+        customLog(btn.tag)
         
         // 如果点击的是选择的按钮
         if selectedIndex == btn.tag {

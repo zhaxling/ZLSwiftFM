@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = BaseTabBarController()
         window?.makeKeyAndVisible()
         
+        ZXLLog("App启动 --- ")
+        customLog("App启动")
+        
         return true
     }
 

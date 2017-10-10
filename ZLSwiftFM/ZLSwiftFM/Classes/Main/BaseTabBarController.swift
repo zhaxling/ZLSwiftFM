@@ -56,7 +56,7 @@ class BaseTabBarController: UITabBarController,ZLTabBarDelegate {
 
     // MARK:- 分栏点击代理ZLTabBarDelegate
     func tabbarDidClickIndex(_ index: NSInteger) {
-        AppLog(index)
+        customLog(index)
         
         var selectToIndex = index
         
