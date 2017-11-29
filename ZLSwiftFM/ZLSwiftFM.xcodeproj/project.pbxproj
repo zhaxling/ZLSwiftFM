@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1872DB761FCE6158006CC1F3 /* ZXLSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872DB751FCE6158006CC1F3 /* ZXLSegmentView.swift */; };
 		D5D6CA96C167E2A94006EBAB /* Pods_ZLSwiftFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73F9312933D87DA418B23C /* Pods_ZLSwiftFM.framework */; };
 		D7060A9A1ECAEF480033B661 /* Xcode in Resources */ = {isa = PBXBuildFile; fileRef = D7060A991ECAEF480033B661 /* Xcode */; };
 		D7060A9C1ECAF5A50033B661 /* ZLTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7060A9B1ECAF5A50033B661 /* ZLTitleTextField.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1872DB751FCE6158006CC1F3 /* ZXLSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXLSegmentView.swift; sourceTree = "<group>"; };
 		18949A151F8B68B500B7CEC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		350F41B8674D17614E90FCE6 /* Pods-ZLSwiftFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLSwiftFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZLSwiftFM/Pods-ZLSwiftFM.release.xcconfig"; sourceTree = "<group>"; };
 		483452F0D204C25980BAC4BE /* Pods-ZLSwiftFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLSwiftFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZLSwiftFM/Pods-ZLSwiftFM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		1872DB741FCE5FBC006CC1F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1872DB751FCE6158006CC1F3 /* ZXLSegmentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1872DB761FCE6158006CC1F3 /* ZXLSegmentView.swift in Sources */,
 				D7D07BF21EC95CB1000A6579 /* AppDelegate.swift in Sources */,
 				D71515841ECD480200CA6269 /* ZLHotViewController.swift in Sources */,
 				D715158C1ECD834200CA6269 /* ZLLiveViewModel.swift in Sources */,
