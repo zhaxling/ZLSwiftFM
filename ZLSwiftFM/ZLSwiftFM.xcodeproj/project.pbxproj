@@ -201,6 +201,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1872DB711FCE5FBC006CC1F3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				1872DB721FCE5FBC006CC1F3 /* Controller */,
+				1872DB731FCE5FBC006CC1F3 /* Model */,
+				1872DB741FCE5FBC006CC1F3 /* View */,
+			);
+			name = Global;
+			path = ZLSwiftFM/Classes/Global;
+			sourceTree = SOURCE_ROOT;
+		};
+		1872DB721FCE5FBC006CC1F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1872DB731FCE5FBC006CC1F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1872DB741FCE5FBC006CC1F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D712F5851ECEBF220011DCC3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +356,7 @@
 		D79174A71EC97F1700B090E7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1872DB711FCE5FBC006CC1F3 /* Global */,
 				D79174B01EC97F6400B090E7 /* Main */,
 				D79174A81EC97F1700B090E7 /* Home(首页) */,
 				D79174C31EC9847400B090E7 /* subscribe(订阅) */,
